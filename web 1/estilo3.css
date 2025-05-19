@@ -20,9 +20,15 @@ header {
 }
 
 header h1 {
-  font-size: 24px;
+   font-size: 24px;
 }
-
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 10px 15px;
+}
 nav a {
   color: #fff;
   margin-left: 20px;
@@ -87,4 +93,189 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
+}
+@media (max-width:430px){
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: rgb(212, 69, 115);
+  padding: 20px 40px;
+  height: 250px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 24px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+nav ul li{
+    margin: 10px 15px;
+}
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  padding: 40px;
+  background-color: rgb(240, 165, 208);
+  align-items: center;
+  gap: 40px;
+}
+
+.introducao img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.introducao-text h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.projetos-section {
+  background-color: #eef3f8;
+  padding: 40px;
+}
+
+.projetos-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projeto {
+  background-color: rgb(240, 165, 208);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.projeto h3 {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(212, 69, 115);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+}
+@media (min-width:431px) and (max-width:853px){
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: rgb(212, 69, 115);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: rgb(240, 165, 208);
+  align-items: center;
+  gap: 40px;
+}
+
+.introducao img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.introducao-text h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.projetos-section {
+  background-color: #eef3f8;
+  padding: 40px;
+}
+
+.projetos-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projeto {
+  background-color: rgb(240, 165, 208);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.projeto h3 {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(212, 69, 115);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
 }
