@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap:10px;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.quadrado1 {
+    background-color: pink;
+    border-radius: 5px;
+}
+
+.quadrado2 {
+    background-color: rgb(180, 220, 248);
+    border-radius: 5px;
+}
+
+
+.quadrado3 {
+    background-color: rgb(212, 240, 169);
+    border-radius: 5px;
+}
+
+
+.quadrado4 {
+    background-color: rgb(204, 175, 232);
+    border-radius: 5px;
+}
+
